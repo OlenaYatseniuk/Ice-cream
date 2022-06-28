@@ -6,6 +6,7 @@
     <title>Page title</title>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./sass/index.css">
   </head>
   <body>
     <section class="gallery">
@@ -44,19 +45,42 @@
           <li class="item">
             <picture>
               <source srcset="./images/girl-coment2-1x.jpg 1x, ./images/girl-coment2-2x.jpg 2x">
-              <img class="coment-img" src="./images/deskgallery1x.jpg" alt="girl">
+              <img class="coment-img slide" src="./images/deskgallery1x.jpg" alt="girl">
             </picture>
-            <p class="coment-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            <p class="coment-text slide">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
           </li>
           <li class="item">
             <picture>
               <source srcset="./images/girl-coment3-1x.jpg 1x, ./images/girl-coment3-2x.jpg 2x">
-              <img class="coment-img" src="./images/deskgallery1x.jpg" alt="girl">
+              <img class="coment-img slide" src="./images/deskgallery1x.jpg" alt="girl">
             </picture>
-            <p class="coment-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
+            <p class="coment-text slide">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
           </li>
         </ul>
-      </div>
+        <div class="slider-coment">
+          <svg>
+            <use class="slider-comen-icon" href="./images/symbol-defs.svg#EEllipse-select"></use>
+          </svg>
+          <svg>
+            <use class="slider-comen-icon" href="./images/symbol-defs.svg#Ellipse-select"></use>
+          </svg>
+          <svg>
+            <use class="slider-comen-icon" href="./images/symbol-defs.svg#Ellipse-select"></use>
+          </svg>
+        </div>
+        <p class="info-people">Emily, Los Angeles</p>
+        <div class="coment-icon">
+          <svg>
+            <use class="info-people-icon" href="./images/symbol-defs.svg#home-select" ></use>
+          </svg>
+          <svg>
+            <use class="info-people-icon" href="./images/symbol-defs.svg#Ellipse-no-select"></use>
+          </svg>
+          <svg>
+            <use class="info-people-icon" href="./images/symbol-defs.svg#Ellipse-no-select"></use>
+          </svg>
+        </div>
+        </div>
     </section>
 
     <include src="./partials/example.html"></include>
