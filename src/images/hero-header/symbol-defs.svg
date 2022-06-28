@@ -1,0 +1,22 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-close">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
+</symbol>
+<symbol id="icon-Burger">
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
+</symbol>
+<symbol id="icon-Vector-1">
+<path  stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M3.2 3.2l12.8 12.8-12.8 12.8"></path>
+</symbol>
+<symbol id="icon-arrow-right" viewBox="0 0 20 20">
+<path d="M16.172 9l-6.071-6.071 1.414-1.414 8.485 8.485-8.485 8.485-1.414-1.414 6.071-6.071h-16.172v-2z"></path>
+</symbol>
+<symbol id="icon-cheveron-right" viewBox="0 0 20 20">
+<path d="M12.95 10.707l0.707-0.707-5.657-5.657-1.414 1.414 4.242 4.243-4.242 4.243 1.414 1.414 4.95-4.95z"></path>
+</symbol>
+</defs>
+</svg>
