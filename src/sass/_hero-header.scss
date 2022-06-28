@@ -1,3 +1,78 @@
 .section-header{
-    background-color: #FFB8CA;
+    background-color: $accent-bg-color;
+    & .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+.nav{
+    display: none;
+}
+.logo{
+    padding-left: 4px;
+    padding-top: 8px;
+}
+.menu-btn{
+    margin-top: 18px;
+    border:0;
+    background-color: transparent;
+}
+.icon-burger{
+    stroke: $accent-color;
+}
+
+// HERO
+
+.hero{
+    max-height: 460px;
+    background-color: $accent-bg-color;
+    & .container{
+        position: relative;
+    }
+}
+.location-list{
+    display: none;
+}
+.info-list{
+    display: none;
+}
+.img-girl{
+    display: none;
+}
+.hero-title-wrapper{
+    position: absolute;
+    z-index: 2;
+
+    color: $default-color;
+    font-family: $secondary-text-font;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+}
+.passion{
+    font-size: 48px;
+    color: $accent-color;
+}
+.img-icecream{
+    position: absolute;
+    transform: scale(1.2);
+    top: 51px;
+    left: 65px;
+    z-index: 1;
+}
+.btn-list{
+    display: flex;
+
+    font-family: $primary-text-font;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 1.2;
+}
+.button-list__link{
+    padding: 8px 14px;
+    border-radius: 50%;
+
 }
