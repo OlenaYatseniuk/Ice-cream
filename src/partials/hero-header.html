@@ -1,17 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+
     <header>
         <section class="section-header">
             <div class="container">
                 <img src="./images/hero-header/logo.png" class="logo" alt="logo" width="199px">
-                <nav class="nav">
+                <nav class="menu">
                     <ul class="nav-list">
                         <li class="nav-list__item"><a class="nav-list__link" href="">Home</a></li>
                         <li class="nav-list__item"><a class="nav-list__link" href="">About us</a></li>
@@ -21,12 +13,28 @@
                     </ul>
                     <button class="button buy-now" type="button">
                         Buy now
-                        <svg width="16px" height="12px">
+                        <svg width="16px" height="14px"> 
                             <use href="./images/symbol-defs.svg#icon-cheveron-right"></use>
                         </svg>
                     </button>
                 </nav>
-                <button type="button" class="menu-btn">
+                <div class="mobile-menu" data-menu aria-expanded="true">
+                    <ul class="mobile-list"> 
+                        <li class="mobile-list__item"><a class="mobile-list__link" href="">Home</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link" href="">About us</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link" href="">How it's made?</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link" href="">Our products</a></li>
+                        <li class="mobile-list__item"><a class="mobile-list__link" href="">Contact</a></li>
+                    </ul>
+                    <button class="button buy-now" type="button">
+                        Buy now
+                        <svg width="16px" height="14px"> 
+                            <use href="./images/symbol-defs.svg#icon-cheveron-right"></use>
+                        </svg>
+                    </button>
+
+                </div>
+                <button type="button" class="menu-btn " data-menu-button aria-expanded="true"> 
                     <svg width="20px" height="20px">
                         <use class="icon-burger" href="./images/symbol-defs.svg#icon-burger"></use>
                         <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
@@ -40,7 +48,7 @@
                 <div class="hero-title-wrapper">
                     <h1 class="hero-title">ice cream <br>made with <br><span class="passion">passion</span></h1>
                     <ul class="btn-list">
-                        <li class="btn-list__item"><a class="button button-list__link" href="">Products</a></li>
+                        <li class="btn-list__item"><a class="button button-list__link--accent" href="">Products</a></li>
                         <li class="btn-list__item"><a class="button button-list__link" href="">How it's made?</a></li>
                     </ul>
                 </div>
@@ -62,12 +70,7 @@
                         </button>
                     </li>
                 </ul>
-                <img class="img-icecream" src="./images/hero-header/icecream.png" alt="icecream">
                 <img class="img-girl" src="./images/hero-header/girl.png" alt="girl">
             </div>
-
-            
-
         </section>
-</body>
-</html>
+        
