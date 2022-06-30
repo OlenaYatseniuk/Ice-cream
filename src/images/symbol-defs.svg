@@ -1,8 +1,8 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
 <symbol id="icon-close">
-<path d="M1.25928 1L14.7408 15"/>
-<path d="M1 14.7407L15 1.25924"/>
+<path d="M1.25928 1L14.7408 15"></path>
+<path d="M1 14.7407L15 1.25924"></path>
 </symbol>
 <symbol id="icon-burger">
 <path d="M0 1H20"/>
