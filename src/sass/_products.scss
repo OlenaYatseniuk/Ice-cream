@@ -352,6 +352,7 @@
     border-color: transparent;
     background-color: $default-color;
     cursor: pointer;
+    transition: background-color 250ms;
 
     &:hover,
     &:focus {
