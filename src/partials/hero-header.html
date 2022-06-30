@@ -1,33 +1,35 @@
-
-    
-        <section class="hero-header">
-            <header>
+        <section class="hero-header" id="header">
+            <header> 
                 <div class="container header">
+                    <picture>
+                    <source srcset="./images/hero-header/logo.png 1x, ./images/hero-header/logo@2x.png 2x">
                     <img src="./images/hero-header/logo.png" class="logo" alt="logo" width="199px">
+                    </picture>
+                    
                     <nav class="menu">
                         <ul class="nav-list">
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Home</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">About us</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">How it's made?</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Our products</a></li>
-                            <li class="nav-list__item"><a class="nav-list__link" href="">Contact</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#header">Home</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#about">About us</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#how-its-made">How it's made?</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#our-products">Our products</a></li>
+                            <li class="nav-list__item"><a class="nav-list__link" href="#contact">Contact</a></li>
                         </ul>
 
                     </nav>
                     <div class="mobile-menu" data-menu aria-expanded="true">
                         <ul class="mobile-list"> 
-                            <li class="mobile-list__item"><a class="mobile-list__link" href="">Home</a></li>
-                            <li class="mobile-list__item"><a class="mobile-list__link" href="">About us</a></li>
-                            <li class="mobile-list__item"><a class="mobile-list__link" href="">How it's made?</a></li>
-                            <li class="mobile-list__item"><a class="mobile-list__link" href="">Our products</a></li>
-                            <li class="mobile-list__item"><a class="mobile-list__link" href="">Contact</a></li>
+                            <li class="mobile-list__item"><a class="mobile-list__link" href="#header">Home</a></li>
+                            <li class="mobile-list__item"><a class="mobile-list__link" href="#about">About us</a></li>
+                            <li class="mobile-list__item"><a class="mobile-list__link" href="#how-its-made">How it's made?</a></li>
+                            <li class="mobile-list__item"><a class="mobile-list__link" href="#our-products">Our products</a></li>
+                            <li class="mobile-list__item"><a class="mobile-list__link" href="#contact">Contact</a></li>
                         </ul> 
-                        <button class="button buy-now" type="button">
+                        <button class="button-header buy-now" type="button">
                             Buy now
                             <svg width="16px" height="14px"> 
                                 <use href="./images/symbol-defs.svg#icon-cheveron-right"></use>
                             </svg>
-                        </button>
+                        </button> 
 
                     </div>  
                     <button type="button" class="menu-btn " data-menu-button aria-expanded="true"> 
@@ -36,23 +38,23 @@
                             <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <button class="button buy-now__header" type="button">
+                    <button class="button-header buy-now__header" type="button">
                         Buy now
                         <svg width="16px" height="14px"> 
                             <use href="./images/symbol-defs.svg#icon-cheveron-right"></use>
                         </svg>
                     </button>
                 </div>
-            </header>    
+            </header>     
         <!-- <section class="hero"> -->
             <div class="container">
                 <div class="hero-wrapper"> 
                     <div class="hero-title-wrapper">
                         <h1 class="hero-title">ice cream <br>made with <br><span class="passion">passion</span></h1>
                         <ul class="btn-list">
-                            <li class="btn-list__item"><a class="button .button-list__link button-list__link--accent" href="">Products</a></li>
-                            <li class="btn-list__item"><a class="button button-list__link" href="">How it's made?</a></li> 
-                        </ul>
+                            <li class="btn-list__item"><a class="button-header button-list__link button-list__link--accent" href="">Products</a></li>
+                            <li class="btn-list__item"><a class="button-header button-list__link" href="">How it's made?</a></li> 
+                        </ul>  
                     </div>     
                     
                     <ul class="location-list">
@@ -61,7 +63,11 @@
                     </ul>
                     <ul class="info-list"> 
                         <li class="info-list__item">
-                            <img src="./images/hero-header/milk.png" alt="">
+                            <picture>
+                                <source srcset="./images/hero-header/desktop/milk-desktop.png 1x, ./images/hero-header/desktop/milk-desktop@2x.png 2x" media="(min-width:1280px)">
+                                <source srcset="./images/hero-header/tablet/milk-tablet.png 1x, ./images/hero-header/tablet/milk-tablet@2x.png 2x" media="(min-width:768px)">
+                                <img src="./images/hero-header/desktop/milk-desktop.png" alt="milk">  
+                            </picture>  
                         </li>
                         <li class="info-list__item">  
                             <p class="info-list__text">
@@ -76,8 +82,12 @@
                             </button>
                         </li>
                     </ul>
-                    <img class="img-girl" src="./images/hero-header/girl.png" alt="girl">
+                    <picture>
+                        <source srcset="./images/hero-header/desktop/girl-desktop.png 1x, ./images/hero-header/desktop/girl-desktop@2x.png 2x" media="(min-width:1280px)">
+                        <source srcset="./images/hero-header/tablet/girl-tablet.png 1x, ./images/hero-header/tablet/girl-tablet@2x.png 2x" media="(min-width:768px)">
+                        <img class="img-girl" src="./images/hero-header/girl.png" alt="girl">
+                    </picture>  
+                    
                 </div>
             </div>
         </section>
-        
