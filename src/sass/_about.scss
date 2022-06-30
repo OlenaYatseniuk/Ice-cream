@@ -1,0 +1,201 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  @media screen and(min-width: 320px) {
+    width: 320px;
+  }
+  @media screen and(min-width: 768px) {
+    padding: 0 32px;
+    width: 768px;
+  }
+  @media screen and(min-width: 1280px) {
+    padding: 0 16px;
+    width: 1280px;
+  }
+}
+
+// .container {
+//   padding: 40px 20px 0;
+
+//   @media screen and (min-width: 768px) {
+//     padding: 20px 34px 40px 32px;
+//   }
+
+//   @media screen and (min-width: 1280px) {
+//     padding: 60px 16px 60px;
+//   }
+//   //   need to merge  ^^^
+//   background-color: $light-accent-bg-color;
+// }
+
+.about {
+  padding-top: 40px;
+  padding-bottom: 20px;
+
+  background-color: $light-accent-bg-color;
+  background-repeat: no-repeat;
+  background-size: contain;
+  //   z-index: 4;
+
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about-advantages/about_sectionbg_mobile.png);
+    background-position: 50% 72%;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url(../images/about-advantages/about_sectionbg_desktop.png);
+    background-position: 50% 92%;
+  }
+}
+
+.about__sub-title {
+  margin-bottom: 15px;
+
+  font-family: $secondary-text-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: $secondary-accent-color;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.about__title {
+  margin-bottom: 32px;
+
+  font-family: $secondary-text-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 60px;
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
+
+.about__block {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.about__picture {
+  @media screen and (max-width: 767px) {
+    margin: 0 auto 40px;
+  }
+  @media screen and (min-width: 768px) {
+    min-width: 336px;
+    margin-right: 32px;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 501px;
+    margin-right: 139px;
+  }
+}
+
+.about__text {
+  margin-right: 60px;
+  font-size: 12px;
+  line-height: 1.62;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 463px;
+    margin-right: 145px;
+  }
+
+  &--bolt {
+    margin-bottom: 40px;
+    @media screen and (min-width: 1280px) {
+      max-width: 463px;
+
+      font-size: 16px;
+      line-height: 1.76;
+      margin-bottom: 32px;
+    }
+  }
+
+  &--secondary {
+    color: $secondary-text-color;
+    @media screen and (min-width: 1280px) {
+      font-size: 14px;
+      line-height: 1.94;
+    }
+  }
+}
+
+.about__button-link {
+  display: inline-flex;
+  margin-top: 20px;
+  min-width: 176px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 40px;
+  }
+}
+
+.about__button-link:hover .about__button,
+.about__button-link:focus .about__button {
+  background: #ecebeb;
+}
+
+.about__button {
+  display: flex;
+  padding: 13px 37px;
+  align-items: center;
+
+  background: #ffffff;
+  border-radius: 22px;
+  border-color: transparent;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.29;
+  color: $accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.31;
+  }
+}
+
+.about__btn-icon {
+  margin-left: 8px;
+  fill: $accent-color;
+}
