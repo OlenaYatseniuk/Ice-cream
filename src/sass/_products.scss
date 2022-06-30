@@ -1,0 +1,427 @@
+.products-section {
+  padding: 80px 0 40px 0;
+
+  @media screen and(min-width: 768px) {
+    padding: 56px 0 60px 0;
+  }
+}
+
+.products {
+
+  &__label {
+    margin-bottom: 15px;
+    font-family: $secondary-text-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-accent-color;
+
+    @media screen and(min-width: 768px) {
+      margin-bottom: 18px;
+
+      font-size: 26px;
+      line-height: 1.15;
+    }
+
+    @media screen and(min-width: 1280px) {
+      margin-bottom: 16px;
+
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+  }
+
+  &__title {
+    font-family: $secondary-text-font;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
+    color: $accent-color;
+
+    @media screen and(min-width: 768px) {
+      font-size: 48px;
+    }
+
+    @media screen and(min-width: 1280px) {
+      font-size: 58px;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  &__list {
+    @media screen and (min-width:768px) {
+      display: flex;
+      flex-wrap: nowrap;
+    }
+  }
+
+  &__item {
+
+    position: relative;
+    padding-top: 148px;
+
+    @media screen and (min-width:768px) {
+      width: calc((100% - 32px) / 3);
+      padding-top: 154px;
+
+      &:not(:last-child) {
+        margin-right: 16px;
+      }
+    }
+
+    @media screen and (min-width:1280px) {
+      width: calc((100% - 64px) / 3);
+      padding-top: 261px;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  &__wrapper {
+
+    padding: 160px 40px 40px 40px;
+    width: 100%;
+    min-height: 489px;
+    border-radius: 24px;
+
+    @media screen and(min-width: 768px) {
+      min-height: 473px;
+      padding: 118px 32px 40px 32px;
+
+    }
+
+    @media screen and(min-width: 1280px) {
+      min-height: 395px;
+      padding: 165px 75px 60px 75px;
+
+    }
+
+    &--first {
+      background-color: $accent-bg-color;
+
+      &::before {
+        content: '';
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        max-width: 100%;
+        background-image: url(../images/products/products1-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/products/products1-mobile@2x.png);
+        }
+
+        @media screen and(min-width: 768px) {
+          width: 224px;
+          height: 224px;
+          background-image: url(../images/products/products1-tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products1-tablet@2x.png);
+          }
+        }
+
+        @media screen and(min-width: 1280px) {
+          width: 394px;
+          height: 394px;
+          background-image: url(../images/products/products1-desktop.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products1-desktop@2x.png);
+          }
+        }
+      }
+
+    }
+
+    &--second {
+      background-color: #F0D1A5;
+
+      &::before {
+        content: '';
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        max-width: 100%;
+        background-image: url(../images/products/products2-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/products/products2-mobile@2x.png);
+        }
+
+        @media screen and(min-width: 768px) {
+          width: 224px;
+          height: 224px;
+          background-image: url(../images/products/products2-tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products2-tablet@2x.png);
+          }
+        }
+
+        @media screen and(min-width: 1280px) {
+          width: 394px;
+          height: 394px;
+          background-image: url(../images/products/products2-desktop.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products2-desktop@2x.png);
+          }
+        }
+      }
+    }
+
+    &--third {
+      background-color: #C2E297;
+
+      &::before {
+        content: '';
+        width: 280px;
+        height: 280px;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        max-width: 100%;
+        background-image: url(../images/products/products3-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+          background-image: url(../images/products/products3-mobile@2x.png);
+        }
+
+        @media screen and(min-width: 768px) {
+          width: 224px;
+          height: 224px;
+          background-image: url(../images/products/products3-tablet.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products3-tablet@2x.png);
+          }
+        }
+
+        @media screen and(min-width: 1280px) {
+          width: 394px;
+          height: 394px;
+          background-image: url(../images/products/products3-desktop.png);
+
+          @media (min-device-pixel-ratio: 2),
+          (min-resolution: 192dpi),
+          (min-resolution: 2dppx) {
+            background-image: url(../images/products/products3-desktop@2x.png);
+          }
+        }
+      }
+    }
+  }
+
+  &__elipse-container {
+    margin: 0 auto 32px auto;
+  }
+
+  &__elipse {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: $default-color;
+
+    &::before {
+      content: '';
+      display: block;
+      margin-left: 10px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $default-color;
+
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 10px;
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $default-color;
+    }
+  }
+
+  &__name {
+    margin-bottom: 32px;
+    font-family: $secondary-text-font;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+    color: $default-color;
+
+    @media screen and(min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+
+
+  }
+
+  &__text {
+    max-width: 200px;
+    margin: 0 auto 32px auto;
+    // padding: 0 40px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    color: $default-color;
+
+    @media screen and(min-width: 768px) {
+      max-width: 160px;
+      line-height: 1.76;
+    }
+
+    @media screen and(min-width: 1280px) {
+      max-width: 241px;
+      font-size: 16px;
+      line-height: 1.76;
+      margin: 0 auto 60px auto;
+    }
+  }
+
+  &__text-hidden {
+    @media screen and(min-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: $default-color;
+    cursor: pointer;
+    transition: background-color 250ms;
+
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
+
+    &:hover .products__tooltip,
+    &:focus .products__tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+    fill: $accent-color;
+  }
+
+  &__tooltip {
+    position: absolute;
+    top: -305%;
+    left: -220%;
+    background-color: $light-accent-bg-color;
+    display: inline-block;
+    width: 550%;
+    height: 251%;
+    padding: 3px;
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1);
+    transition: visibility 250ms,
+      opacity 250ms,
+      transform 250ms;
+
+    @media screen and(min-width: 768px) {
+      width: 535%;
+    }
+
+    @media screen and(min-width: 1280px) {
+      width: 650%;
+      left: -277%;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: -1px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: $light-accent-bg-color transparent transparent transparent;
+
+    }
+  }
+
+  &__tooltip-text {
+    color: $accent-color;
+    font-size: 10px;
+    font-family: $secondary-text-font;
+
+    @media screen and(min-width: 1280px) {
+      font-size: 13px;
+    }
+  }
+}
