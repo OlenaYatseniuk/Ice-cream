@@ -353,7 +353,13 @@
     background-color: $default-color;
     cursor: pointer;
 
-    &:hover .products__tooltip {
+    &:hover,
+    &:focus {
+      background-color: #ECEBEB;
+    }
+
+    &:hover .products__tooltip,
+    &:focus .products__tooltip {
       visibility: visible;
       opacity: 1;
       transform: scale(1.1);
