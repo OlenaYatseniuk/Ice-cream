@@ -341,6 +341,7 @@
   }
 
   &__button {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -351,6 +352,12 @@
     border-color: transparent;
     background-color: $default-color;
     cursor: pointer;
+
+    &:hover .products__tooltip {
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1.1);
+    }
   }
 
   &__icon {
@@ -359,5 +366,55 @@
     fill: $accent-color;
   }
 
+  &__tooltip {
+    position: absolute;
+    top: -305%;
+    left: -220%;
+    background-color: $light-accent-bg-color;
+    display: inline-block;
+    width: 550%;
+    height: 251%;
+    padding: 3px;
+    border: 1px solid $accent-color;
+    border-radius: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1);
+    transition: visibility 250ms,
+      opacity 250ms,
+      transform 250ms;
 
+    @media screen and(min-width: 768px) {
+      width: 535%;
+    }
+
+    @media screen and(min-width: 1280px) {
+      width: 650%;
+      left: -277%;
+    }
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: -1px;
+      border-width: 10px;
+      border-style: solid;
+      border-color: $light-accent-bg-color transparent transparent transparent;
+
+    }
+  }
+
+  &__tooltip-text {
+    color: $accent-color;
+    font-size: 10px;
+    font-family: $secondary-text-font;
+
+    @media screen and(min-width: 1280px) {
+      font-size: 13px;
+    }
+  }
 }
