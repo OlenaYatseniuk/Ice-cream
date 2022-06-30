@@ -9,75 +9,9 @@
     <link rel="stylesheet" href="./sass/index.css">
   </head>
   <body>
-    <section class="gallery">
-      <h2 class="gallery-title is-hiden">gallery</h2>
-      <div class="container">
-        <picture>
-          <source
-            srcset="./images/deskgallery1x.jpg 1x, ./images/deskgallery2x.jpg 2x"
-            media="(min-width: 1280px)"
-          />
-          <source
-            srcset="./images/tablgallery1x.jpg 1x, ./images/tablgallery2x.jpg 2x"
-            media="(min-width: 768px)"
-          />
-          <source
-            srcset="./images/mobgalleryx1.jpg 1x, ./images/mobgalleryx2.jpg 2x"
-            media="(min-width: 320px)"
-          />
-          <img 
-            class="gallery-img"
-            src="./images/deskgallery1x.jpg" width="1280"
-            alt="photo-gallery"
-          />
-        </picture>
-      </div>
-    </section>
-    <section class="coment">
-      <div class="container">
-        <ul class="list">
-          <li class="item">
-            <picture>
-              <source srcset="./images/girl-coment1-1x.jpg 1x, ./images/girl-coment1-2x.jpg 2x">
-              <img class="coment-img" src="./images/deskgallery1x.jpg" alt="girl">
-            </picture>
-            <p class="coment-text">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-          </li>
-          <li class="item">
-            <picture>
-              <source srcset="./images/girl-coment2-1x.jpg 1x, ./images/girl-coment2-2x.jpg 2x">
-              <img class="coment-img slide" src="./images/deskgallery1x.jpg" alt="girl">
-            </picture>
-            <p class="coment-text slide">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-          </li>
-          <li class="item">
-            <picture>
-              <source srcset="./images/girl-coment3-1x.jpg 1x, ./images/girl-coment3-2x.jpg 2x">
-              <img class="coment-img slide" src="./images/deskgallery1x.jpg" alt="girl">
-            </picture>
-            <p class="coment-text slide">Nullam viverra consectetuer. Quisque cursus et, porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan congue. Lorem ipsum primis in nibh vel risus.</p>
-          </li>
-        </ul>
-        
-          <svg>
-            <use class="slider-comen-icon" href="./images/symbol-defs.svg#3-point"></use>
-          </svg>
-         
-        <p class="info-people">Emily, Los Angeles</p>
-        <div class="coment-icon">
-          <svg>
-            <use class="info-people-icon" href="./images/symbol-defs.svg#home-select" ></use>
-          </svg>
-          <svg>
-            <use class="info-people-icon" href="./images/symbol-defs.svg#Ellipse-no-select"></use>
-          </svg>
-          <svg>
-            <use class="info-people-icon" href="./images/symbol-defs.svg#Ellipse-no-select"></use>
-          </svg>
-        </div>
-        </div>
-    </section>
+   
 
-    <include src="./partials/example.html"></include>
+   
+    <include src="./partials/gallery.html"></include>
   </body>
 </html>

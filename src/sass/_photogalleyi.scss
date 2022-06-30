@@ -1,0 +1,42 @@
+.gallery{
+  background-image: linear-gradient(to bottom, $light-accent-bg-color 41%, $default-color 42.5%,$default-color 100%);
+    
+    @media screen and (min-width:320px) {
+     padding-top: 40px;
+     padding-bottom: 40px; 
+    }
+
+    @media screen and (min-width:1280px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
+    }
+    
+    .gallery-title{
+        font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFA5BA;
+    }
+    .is-hiden{
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      margin: -1px;
+      border: 0;
+      padding: 0;
+      white-space: normal;
+      clip-path: inset(100%);
+      clip: rect(0 0 0 0);
+      overflow: hidden;
+    }
+    .gallery-img{
+      margin-left: auto;
+      margin-right: auto;
+    }
+          
+    
