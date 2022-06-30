@@ -219,7 +219,17 @@
  
     }       
 }
-.location-list__item::before{
+.location-list__item::after{
+    content: " ";
+    display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background-color: $default-color;
+        color: $accent-color;
+        position: absolute;
+        top: 0;
+        right: 0;
     @media screen and (min-width: 768px){
         display: block;
         width: 16px;
