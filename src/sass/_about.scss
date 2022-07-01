@@ -1,13 +1,16 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
+
   @media screen and(min-width: 320px) {
     width: 320px;
   }
+
   @media screen and(min-width: 768px) {
     padding: 0 32px;
     width: 768px;
   }
+
   @media screen and(min-width: 1280px) {
     padding: 0 16px;
     width: 1280px;
@@ -74,6 +77,7 @@
     font-size: 26px;
     line-height: 1.15;
   }
+
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
@@ -99,6 +103,7 @@
     font-size: 48px;
     line-height: 1.15;
   }
+
   @media screen and (min-width: 1280px) {
     margin-bottom: 60px;
     font-size: 58px;
@@ -117,10 +122,12 @@
   @media screen and (max-width: 767px) {
     margin: 0 auto 40px;
   }
+
   @media screen and (min-width: 768px) {
     min-width: 336px;
     margin-right: 32px;
   }
+
   @media screen and (min-width: 1280px) {
     min-width: 501px;
     margin-right: 139px;
@@ -131,11 +138,13 @@
   margin-right: 60px;
   font-size: 12px;
   line-height: 1.62;
+
   @media screen and (min-width: 768px) {
     margin: 0;
     font-size: 14px;
     line-height: 1.76;
   }
+
   @media screen and (min-width: 1280px) {
     max-width: 463px;
     margin-right: 145px;
@@ -143,6 +152,7 @@
 
   &--bolt {
     margin-bottom: 40px;
+
     @media screen and (min-width: 1280px) {
       max-width: 463px;
 
@@ -154,6 +164,7 @@
 
   &--secondary {
     color: $secondary-text-color;
+
     @media screen and (min-width: 1280px) {
       font-size: 14px;
       line-height: 1.94;
@@ -174,6 +185,7 @@
 .about__button-link:hover .about__button,
 .about__button-link:focus .about__button {
   background: #ecebeb;
+  cursor: pointer;
 }
 
 .about__button {
@@ -188,6 +200,7 @@
   font-size: 14px;
   line-height: 1.29;
   color: $accent-color;
+  transition: background-color 0.25s;
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
