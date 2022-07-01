@@ -1,12 +1,17 @@
 .slider{
     @media screen and (min-width:320px) {
         padding-top: 40px;
-        padding-bottom: 40px; 
+        padding-bottom: 375px; 
+       }
+   
+       @media screen and (min-width: 768px) {
+        padding-top: 40px;
+        padding-bottom: 213px; 
        }
    
        @media screen and (min-width:1280px) {
        padding-top: 60px;
-       padding-bottom: 60px;
+       padding: bottom 223px;
        }
 }
 
@@ -45,7 +50,7 @@
   
     }
     @media screen and (min-width: 1280px) {
-    max-width: 822px;
+    max-width: 1035px;
     width: 100%;
     padding-top: 32px;
     padding-right: 106px;
